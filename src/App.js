@@ -31,7 +31,8 @@ function App() {
           </Toolbar>
         </AppBar>
       
-      
+      {/* Test button */}
+      <Button>Test Button</Button>
 
     </div>
   );
