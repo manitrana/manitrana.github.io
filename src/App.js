@@ -34,6 +34,19 @@ function App() {
       {/* Test button */}
       <Button>Test Button</Button>
 
+      {/* High-Level Widgets */}
+      <Container sx = {{ p: '2' }}>
+        <Grid container spacing={12} justifyContent="center">
+          <Grid item xs={2}>
+            <Container sx={{ bgcolor: '#F8F8F8', height: '10vh', width: '200px', boxShadow: '1', borderRadius: '5px' }}>
+              <Typography variant="body1" component="div" sx={{ flexGrow: 1 }}>
+                Total Crimes          
+              </Typography>
+            </Container>          
+          </Grid>
+        </Grid>
+      </Container>
+
     </div>
   );
 }
