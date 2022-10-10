@@ -34,6 +34,8 @@ function App() {
       {/* Test button */}
       <Button>Test Button</Button>
 
+      <Button>Test Button 2</Button>
+
       {/* High-Level Widgets */}
       <Container sx = {{ p: '2' }}>
         <Grid container spacing={12} justifyContent="center">
