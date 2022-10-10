@@ -36,7 +36,7 @@ function App() {
 
       <Grid container spacing={2} padding="2vh">
         
-        <Grid item xs={4}>
+        <Grid item xs={2}>
           {/* Total Crimes High-Level Widget */}
           <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '300px'}}>
             
@@ -56,7 +56,7 @@ function App() {
           </Container>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item xs={2}>
           {/* Violent Crimes High-Level Widget */}
           <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '300px'}}>       
             <Box sx={{ color: '#46505A' }}>Total Violent Crimes</Box>
@@ -72,7 +72,7 @@ function App() {
           </Container>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item xs={2}>
           {/* Assaults High-Level Widget */}
           <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '300px'}}>       
             <Box sx={{ color: '#46505A' }}>Total Assaults</Box>
@@ -88,7 +88,7 @@ function App() {
           </Container>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item xs={2}>
           {/* Robberies High-Level Widget */}
           <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '300px'}}>       
             <Box sx={{ color: '#46505A' }}>Total Robberies</Box>
