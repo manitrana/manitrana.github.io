@@ -34,9 +34,9 @@ function App() {
 
       
 
-      <Grid container spacing={2}>
+      <Grid container spacing={2} padding="2vh">
         
-        <Grid item xs={6}>
+        <Grid item xs={4}>
           {/* Total Crimes High-Level Widget */}
           <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '300px'}}>
             
@@ -56,7 +56,7 @@ function App() {
           </Container>
         </Grid>
 
-        <Grid item xs={6}>
+        <Grid item xs={4}>
           {/* Violent Crimes High-Level Widget */}
           <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '300px'}}>       
             <Box sx={{ color: '#46505A' }}>Total Violent Crimes</Box>
@@ -72,7 +72,38 @@ function App() {
           </Container>
         </Grid>
 
-        
+        <Grid item xs={4}>
+          {/* Assaults High-Level Widget */}
+          <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '300px'}}>       
+            <Box sx={{ color: '#46505A' }}>Total Assaults</Box>
+            <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>
+              20 K
+            </Box>
+            <Box sx={{ color: '#009688', display: 'inline', fontWeight: 'bold', mx: 0.5, fontSize: 14,}}>
+              +17%
+            </Box>
+            <Box sx={{ color: 'lightgray', display: 'inline', fontSize: 14 }}>
+              vs. last month
+            </Box>
+          </Container>
+        </Grid>
+
+        <Grid item xs={4}>
+          {/* Robberies High-Level Widget */}
+          <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '300px'}}>       
+            <Box sx={{ color: '#46505A' }}>Total Robberies</Box>
+            <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>
+              20 K
+            </Box>
+            <Box sx={{ color: '#009688', display: 'inline', fontWeight: 'bold', mx: 0.5, fontSize: 14,}}>
+              +17%
+            </Box>
+            <Box sx={{ color: 'lightgray', display: 'inline', fontSize: 14 }}>
+              vs. last month
+            </Box>
+          </Container>
+        </Grid>
+
       </Grid>
         
 
