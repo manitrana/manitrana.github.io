@@ -31,23 +31,40 @@ function App() {
           </Toolbar>
         </AppBar>
                
-      {/* Test button */}
-      <Button>Test Button</Button>
+      
 
-      <Button>Test Button 2</Button>
-
-      {/* High-Level Widgets */}
-      <Container sx = {{ p: '2' }}>
-        <Grid container spacing={12} justifyContent="center">
-          <Grid item xs={2}>
-            <Container sx={{ bgcolor: '#F8F8F8', height: '10vh', width: '200px', boxShadow: '1', borderRadius: '5px' }}>
-              <Typography variant="body1" component="div" sx={{ flexGrow: 1 }}>
-                Total Crimes          
-              </Typography>
-            </Container>          
+        {/* High-Level Widgets */}
+        <Container sx = {{ p: '2' }}>
+          <Grid container spacing={12} justifyContent="center">
+            <Grid item xs={2}>
+              <Container sx={{ bgcolor: '#F8F8F8', height: '10vh', width: '200px', boxShadow: '1', borderRadius: '5px' }}>
+                <Typography variant="body1" component="div" sx={{ flexGrow: 1 }}>
+                  Total Crimes          
+                </Typography>
+              </Container>          
+            </Grid>
           </Grid>
-        </Grid>
-      </Container>
+        </Container>
+
+
+      {/* Total Crimes High-Level Widget */}
+        <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '300px'}}>
+          
+          <Box sx={{ color: '#46505A' }}>Total Crimes</Box>
+
+          <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>
+            128.3 K
+          </Box>
+
+          <Box sx={{ color: '#009688', display: 'inline', fontWeight: 'bold', mx: 0.5, fontSize: 14,}}>
+            +10%
+          </Box>
+
+          <Box sx={{ color: '#46505A', display: 'inline', fontSize: 14 }}>
+            vs. last month
+          </Box>
+
+        </Container>
 
     </div>
   );
