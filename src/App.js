@@ -32,45 +32,52 @@ function App() {
         </AppBar>
 
 
-      {/* Total Crimes High-Level Widget */}
-        <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '300px'}}>
-          
-          <Box sx={{ color: '#46505A' }}>Total Crimes</Box>
+      
 
-          <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>
-            128.3 K
-          </Box>
+      <Grid container spacing={2}>
+        
+        <Grid item xs={6}>
+          {/* Total Crimes High-Level Widget */}
+          <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '300px'}}>
+            
+            <Box sx={{ color: '#46505A' }}>Total Crimes</Box>
 
-          <Box sx={{ color: '#009688', display: 'inline', fontWeight: 'bold', mx: 0.5, fontSize: 14,}}>
-            +10%
-          </Box>
+            <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>
+              128.3 K
+            </Box>
 
-          <Box sx={{ color: 'lightgray', display: 'inline', fontSize: 14 }}>
-            vs. last month
-          </Box>
+            <Box sx={{ color: '#009688', display: 'inline', fontWeight: 'bold', mx: 0.5, fontSize: 14,}}>
+              +10%
+            </Box>
 
-        </Container>
+            <Box sx={{ color: 'lightgray', display: 'inline', fontSize: 14 }}>
+              vs. last month
+            </Box>
+          </Container>
+        </Grid>
+
+        <Grid item xs={6}>
+          {/* Violent Crimes High-Level Widget */}
+          <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '300px'}}>       
+            <Box sx={{ color: '#46505A' }}>Total Violent Crimes</Box>
+            <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>
+              47.1 K
+            </Box>
+            <Box sx={{ color: '#009688', display: 'inline', fontWeight: 'bold', mx: 0.5, fontSize: 14,}}>
+              +7%
+            </Box>
+            <Box sx={{ color: 'lightgray', display: 'inline', fontSize: 14 }}>
+              vs. last month
+            </Box>
+          </Container>
+        </Grid>
+
+        
+      </Grid>
+        
 
 
-        {/* Violent Crimes High-Level Widget */}
-        <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '300px'}}>
-          
-          <Box sx={{ color: '#46505A' }}>Total Violent Crimes</Box>
-
-          <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>
-            47.1 K
-          </Box>
-
-          <Box sx={{ color: '#009688', display: 'inline', fontWeight: 'bold', mx: 0.5, fontSize: 14,}}>
-            +7%
-          </Box>
-
-          <Box sx={{ color: 'lightgray', display: 'inline', fontSize: 14 }}>
-            vs. last month
-          </Box>
-
-        </Container>
-
+        
     </div>
   );
 }
