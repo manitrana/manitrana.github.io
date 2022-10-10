@@ -13,11 +13,6 @@ import MenuIcon from '@mui/material/MenuItem';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
-});
 
 function App() {
   return (
@@ -26,29 +21,18 @@ function App() {
       {
       /* Nav Bar element */
       }
-
-        {/* Dark Mode Theme code */}
-        
-        {/* 
-        <ThemeProvider theme={darkTheme}>
-          <CssBaseline />
-          <main>This app is using the dark mode</main>
-        </ThemeProvider>
-        */}
-
-
         {/* NAVBAR */}
-        <AppBar position="static">
-          <Toolbar>
-            <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-              <MenuIcon/>
-            </IconButton>
-            <Typography variant="h5" fontWeight="bold" component="div" sx={{ flexGrow: 1 }}>
-              Crime Analysis Dashboard
-            </Typography>
-            <Button color="inherit">Login</Button>
-          </Toolbar>
-        </AppBar>
+      <AppBar position="static" sx={{bgcolor: 'black'}}>
+        <Toolbar>
+          <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+            <MenuIcon/>
+          </IconButton>
+          <Typography variant="h5" fontWeight="bold" component="div" sx={{ flexGrow: 1 }}>
+            Crime Analysis Dashboard
+          </Typography>
+          <Button color="inherit">Login</Button>
+        </Toolbar>
+      </AppBar>
 
 
       
@@ -57,7 +41,7 @@ function App() {
         
         {/* Total Crimes High-Level Widget */}
         <Grid item xs={3}>
-          <Container sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '400px', height: '150px'}}>
+          <Container sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 2, width: '400px', height: '150px'}}>
             <Box sx={{alignItems: 'center'}}>
               <Box sx={{ color: '#46505A' }}>Total Crimes</Box>
               <Box sx={{color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>128.3 K</Box>
@@ -69,7 +53,7 @@ function App() {
 
         {/* Violent Crimes High-Level Widget */}
         <Grid item xs={3}>
-          <Container sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '400px', height: '150px'}}>       
+          <Container sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 2, width: '400px', height: '150px'}}>       
             <Box sx={{alignItems: 'center'}}>
               <Box sx={{ color: '#46505A' }}>Total Violent Crimes</Box>
               <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>47.1 K</Box>
@@ -81,7 +65,7 @@ function App() {
 
         {/* Assaults High-Level Widget */}
         <Grid item xs={3}>
-          <Container sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '400px', height: '150px'}}>       
+          <Container sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 2, width: '400px', height: '150px'}}>       
             <Box sx={{alignItems: 'center'}}>
               <Box sx={{ color: '#46505A' }}>Total Assaults</Box>
               <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>20 K</Box>
@@ -93,7 +77,7 @@ function App() {
 
         {/* Robberies High-Level Widget */}
         <Grid item xs={3}>
-          <Container sx={{display: 'flex', justifyContent: 'center',alignItems: 'center', bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '400px', height: '150px'}}>       
+          <Container sx={{display: 'flex', justifyContent: 'center',alignItems: 'center', bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 2, width: '400px', height: '150px'}}>       
             <Box sx={{alignItems: 'center'}}>
               <Box sx={{ color: '#46505A' }}>Total Robberies</Box>
               <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>20 K</Box>
@@ -107,11 +91,11 @@ function App() {
         
       {/* Interactive Data Charts */}
       <Grid container spacing={1} padding="2vh">
-        <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '900px', height: '400px'}}>
+        <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 2, width: '900px', height: '400px'}}>
           <Box sx={{display: 'flex', justifyContent: 'flex-start', fontWeight: 'bold', color: '#46505A' }}>Regional Analysis</Box>
         </Container>
 
-        <Container sx={{bgcolor: 'spacegray', boxShadow: 1, borderRadius: 2, p: 2, width: '900px', height: '400px'}}>
+        <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 2, width: '900px', height: '400px'}}>
           <Box sx={{ display: 'flex', justifyContent: 'flex-start', fontWeight: 'bold', color: '#46505A' }}>Trend: last 10 years</Box>
         </Container>
       </Grid>
