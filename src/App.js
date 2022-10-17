@@ -14,6 +14,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
 
+
 function App() {
   return (
     <div className="App">
@@ -97,9 +98,11 @@ function App() {
 
         <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 2, width: '900px', height: '400px'}}>
           <Box sx={{ display: 'flex', justifyContent: 'flex-start', fontWeight: 'bold', color: '#46505A' }}>Trend: last 10 years</Box>
+          <canvas id="myChart2"></canvas>
         </Container>
       </Grid>
 
+  {/*End of React content*/}
         
     </div>
   );
