@@ -12,6 +12,7 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/material/MenuItem';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import { Doughnut } from 'react-chartjs-2';
 
 
 
@@ -97,8 +98,7 @@ function App() {
         </Container>
 
         <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 2, width: '900px', height: '400px'}}>
-          <Box sx={{ display: 'flex', justifyContent: 'flex-start', fontWeight: 'bold', color: '#46505A' }}>Trend: last 10 years</Box>
-          <canvas id="myChart2"></canvas>
+          <Box sx={{ display: 'flex', justifyContent: 'flex-start', fontWeight: 'bold', color: '#46505A' }}>Trend: last 10 years</Box>        
         </Container>
       </Grid>
 
