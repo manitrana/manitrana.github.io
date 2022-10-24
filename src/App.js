@@ -12,7 +12,11 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/material/MenuItem';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import { Doughnut } from 'react-chartjs-2';
+import BarChart from './components/BarChart/BarChart';
+import PieChart from './components/PieChart/PieChart';
+import Main from './components/Main/Main';
+import NavBar from './components/NavBar/NavBar';
+
 
 
 
@@ -20,22 +24,7 @@ function App() {
   return (
     <div className="App">
       
-      {
-      /* Nav Bar element */
-      }
-        {/* NAVBAR */}
-      <AppBar position="static" sx={{bgcolor: 'black'}}>
-        <Toolbar>
-          <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-            <MenuIcon/>
-          </IconButton>
-          <Typography variant="h5" fontWeight="bold" component="div" sx={{ flexGrow: 1 }}>
-            Crime Analysis Dashboard
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
-
+    <NavBar></NavBar>
 
       
       {/* High-Level Widgets */}
@@ -93,13 +82,10 @@ function App() {
         
       {/* Interactive Data Charts */}
       <Grid container spacing={1} padding="2vh">
-        <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 2, width: '900px', height: '400px'}}>
-          <Box sx={{display: 'flex', justifyContent: 'flex-start', fontWeight: 'bold', color: '#46505A' }}>Regional Analysis</Box>
-        </Container>
-
-        <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 2, width: '900px', height: '400px'}}>
-          <Box sx={{ display: 'flex', justifyContent: 'flex-start', fontWeight: 'bold', color: '#46505A' }}>Trend: last 10 years</Box>        
-        </Container>
+        
+        <PieChart></PieChart>
+        <BarChart></BarChart>
+        
       </Grid>
 
   {/*End of React content*/}
