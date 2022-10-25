@@ -16,6 +16,7 @@ import BarChart from './components/BarChart/BarChart';
 import PieChart from './components/PieChart/PieChart';
 import Main from './components/Main/Main';
 import NavBar from './components/NavBar/NavBar';
+import AreaChart from './components/AreaChart/AreaChart';
 
 
 
@@ -23,7 +24,7 @@ import NavBar from './components/NavBar/NavBar';
 function App() {
   return (
     <div className="App">
-      
+    
     <NavBar></NavBar>
 
       
@@ -85,6 +86,8 @@ function App() {
         
         <PieChart></PieChart>
         <BarChart></BarChart>
+        <AreaChart></AreaChart>
+        <Main></Main>
         
       </Grid>
 

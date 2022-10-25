@@ -30,6 +30,24 @@ export default function PieChart() {
             ],
             borderWidth: 1,
           },
+
+          /*{
+            labels: ["A","B","C","D","E","F"],
+            datasets: [
+              {
+                label: "Testing",
+                data: [10,9,4,7,9,19],
+                backgroundColor: [
+                  "#007D9C",
+                  "#244D70",
+                  "#D123B3",
+                  "#F7E018",
+                  "#fff",
+                  "#FE452A",
+                ]
+              }
+            ]
+          }*/
         ],
       };
       return (
