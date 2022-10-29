@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
     
-    <NavBar></NavBar>
+      <NavBar></NavBar>
 
       
       {/* High-Level Widgets */}
@@ -82,12 +82,11 @@ function App() {
       </Grid>
         
       {/* Interactive Data Charts */}
-      <Grid container spacing={1} padding="2vh">
+      <Grid container spacing={2} padding="6vh" display="flex" justifyContent="center">
         
         <PieChart></PieChart>
         <BarChart></BarChart>
         <AreaChart></AreaChart>
-        <Main></Main>
         
       </Grid>
 

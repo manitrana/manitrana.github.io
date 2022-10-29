@@ -1,5 +1,7 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
 
 export default function AreaChart() {
 
@@ -21,10 +23,16 @@ export default function AreaChart() {
             backgroundColor: '#4CAF50', // Add custom color background (Points and Fill)
             borderWidth: 1 // Specify bar border width
         }]
-    }
+    };
     
     return (
-        <Line data={data}/>
-    )
+        
+        <div>
+            <Container>
+                <Line data={data}/>
+            </Container>
+            
+        </div>
+    );
 
 }
