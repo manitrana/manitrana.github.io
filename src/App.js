@@ -29,6 +29,7 @@ import HandshakeIcon from '@mui/icons-material/Handshake';
 import Card  from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
+import DistributorDataTable from './components/DistributorDataTable/DistributorDataTable';
 
 
 
@@ -181,6 +182,7 @@ function App() {
         <BarChart></BarChart>
         <AreaChart></AreaChart>
         <ProductsDataTable></ProductsDataTable>
+        <DistributorDataTable></DistributorDataTable>
 
         
       </Grid>
