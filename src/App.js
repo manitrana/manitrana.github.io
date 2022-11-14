@@ -181,11 +181,19 @@ function App() {
         {/* Importing all components */}
         <BarChart></BarChart>
         <AreaChart></AreaChart>
+        
+      
+      </Grid>
+
+      <Grid sx={{spacing: "2", display: "flex", justifyContent: "center", mb: 5}}>
         <ProductsDataTable></ProductsDataTable>
         <DistributorDataTable></DistributorDataTable>
-
-        
       </Grid>
+      
+    
+
+      
+      
 
   {/*End of React content*/}
         
