@@ -26,6 +26,9 @@ import { useEffect, useRef, useState } from "react";
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import HandshakeIcon from '@mui/icons-material/Handshake';
+import Card  from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
 
 
 
@@ -49,9 +52,7 @@ function App() {
       <NavBar></NavBar>
       
       
-      
-      
-      
+
       {/* High-Level Widgets */}
       <Grid container spacing={4} padding="4vh" justify="center" align="center" direction="row">
         
@@ -69,20 +70,24 @@ function App() {
             width: '400px', 
             height: '150px'}}>
 
-            <Box sx={{alignItems: 'start'}}>
-              
-              <Box>
+            <Box>
                 <HandshakeIcon fontSize='large'/>
-              </Box>
+            </Box>
 
+            <Box>
+              
               <Box sx={{ color: '#46505A' }}>Total Sales</Box>
 
               <Box sx={{color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>128.3 K</Box>
               
-              <Box sx={{ color: '#009688', display: 'inline', fontWeight: 'bold', mx: 0.5, fontSize: 14,}}>
-                <ArrowUpwardIcon/>
-                10%
-                <Box sx={{ color: 'lightgray', display: 'inline', fontSize: 14 }}>vs. last month</Box>
+              <Box sx={{display: 'flex', direction: 'row'}}>
+                <ArrowUpwardIcon sx={{color: '#009688'}}/>
+                <Box sx={{ color: '#009688', fontWeight: 'bold', fontSize: 14,}}>
+                  10%
+                </Box>
+                <Box sx={{ color: 'lightgray', display: 'inline', fontSize: 14 }}>
+                  vs. last month
+                </Box>
               </Box>
               
             </Box>
@@ -166,14 +171,17 @@ function App() {
 
       </Grid>
         
+
+
+
       {/* Interactive Data Charts */}
       <Grid container spacing={2} padding="6vh" display="flex" justifyContent="center">
         
         {/* Importing all components */}
         <BarChart></BarChart>
-        <ProductsDataTable></ProductsDataTable>
-        <PieChart></PieChart>
         <AreaChart></AreaChart>
+        <ProductsDataTable></ProductsDataTable>
+
         
       </Grid>
 

@@ -25,10 +25,10 @@ export default function ProductsDataTable() {
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
-                            <TableCell>Distributor Name</TableCell>
-                            <TableCell align="right">Products Sold</TableCell>
-                            <TableCell align="right">Total Sales</TableCell>
-                            <TableCell align="right">Status</TableCell>
+                            <TableCell sx={{fontWeight: 'bold'}}>Distributor Name</TableCell>
+                            <TableCell sx={{fontWeight: 'bold'}}>Products Sold</TableCell>
+                            <TableCell sx={{fontWeight: 'bold'}}>Total Sales</TableCell>
+                            <TableCell sx={{fontWeight: 'bold'}}>Status</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -37,10 +37,10 @@ export default function ProductsDataTable() {
                                 <TableCell component="th" scope="row">
                                     {row.name}
                                 </TableCell>
-                                <TableCell align="right">{row.calories}</TableCell>
-                                <TableCell align="right">{row.fat}</TableCell>
-                                <TableCell align="right">{row.carbs}</TableCell>
-                                <TableCell align="right">{row.protein}</TableCell>
+                                <TableCell>{row.calories}</TableCell>
+                                <TableCell>{row.fat}</TableCell>
+                                <TableCell>{row.carbs}</TableCell>
+                                <TableCell>{row.protein}</TableCell>
                             </TableRow>))}
                     </TableBody>
                 </Table>
