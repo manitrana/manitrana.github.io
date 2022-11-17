@@ -20,7 +20,7 @@ export default function NavBar() {
                 <MenuIcon/>
             </IconButton>
             <Typography variant="h5" fontWeight="bold" component="div" sx={{ flexGrow: 1 }}>
-                Crime Analysis Dashboard
+                Sales 360            
             </Typography>
             <Button color="inherit">Login</Button>
         </Toolbar>

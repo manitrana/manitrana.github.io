@@ -15,7 +15,7 @@ const BarChart = () => {
         backgroundColor: "ghostwhite",
         borderColor: "lightblue",
         fill: true,
-        data: [17, 5, 12, 0, 10, 5, 2, 20, 30, 45, 31, 54],
+        data: [17, 5, 12, 17, 34, 27, 2, 20, 30, 45, 31, 54],
       },
       /*
       {

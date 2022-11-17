@@ -176,18 +176,31 @@ function App() {
 
 
       {/* Interactive Data Charts */}
-      <Grid container spacing={2} padding="6vh" display="flex" justifyContent="center">
+      <Grid marginRight="10vh" marginLeft="10vh" marginBottom="5vh" display="flex" justifyContent="flex-start">
         
         {/* Importing all components */}
-        <BarChart></BarChart>
-        <AreaChart></AreaChart>
         
       
       </Grid>
 
-      <Grid sx={{spacing: "2", display: "flex", justifyContent: "center", mb: 5}}>
-        <ProductsDataTable></ProductsDataTable>
-        <DistributorDataTable></DistributorDataTable>
+      <Grid display="flex" justify="center" direction="row" margin="2vh">
+        <Container>
+          <BarChart></BarChart>
+        </Container>
+        <Container>
+          <AreaChart></AreaChart>
+        </Container>
+        
+      </Grid>
+
+      <Grid display="flex" justify="center" direction="row" margin="2vh">
+        <Container>
+          <ProductsDataTable></ProductsDataTable>
+        </Container>
+        <Container>
+          <DistributorDataTable></DistributorDataTable>
+        </Container>
+        
       </Grid>
       
     

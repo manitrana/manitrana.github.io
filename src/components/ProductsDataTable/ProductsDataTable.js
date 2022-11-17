@@ -7,6 +7,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import spacing from '@mui/system';
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
 
 
 export default function ProductsDataTable() {
@@ -23,30 +25,39 @@ export default function ProductsDataTable() {
       ];
     return (
         <div>
-            <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 650, maxWidth: 800}} aria-label="simple table">
-                    <TableHead>
-                        <TableRow>
-                            <TableCell sx={{fontWeight: 'bold', backgroundColor: '#F8F8FF'}}>Product Name</TableCell>
-                            <TableCell sx={{fontWeight: 'bold', backgroundColor: '#F8F8FF'}}>Amount Sold</TableCell>
-                            <TableCell sx={{fontWeight: 'bold', backgroundColor: '#F8F8FF'}}>Total Revenue</TableCell>
-                            <TableCell sx={{fontWeight: 'bold', backgroundColor: '#F8F8FF'}}>Revenue Growth</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {rows.map((row) => (
-                            <TableRow key={row.name} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-                                <TableCell component="th" scope="row">
-                                    {row.name}
-                                </TableCell>
-                                <TableCell>{row.amountsold}</TableCell>
-                                <TableCell>{row.revenue}</TableCell>
-                                <TableCell>{row.growth}</TableCell>
-                                
-                            </TableRow>))}
-                    </TableBody>
-                </Table>
-            </TableContainer>
+
+            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '700px', height: '350px'}}>
+                <Box sx={{ display: 'flex', justifyContent: 'center', fontWeight: 'bold', color: '#46505A' }}>
+                    
+                    <TableContainer component={Paper}>
+                    <Table sx={{ minWidth: 650, maxWidth: 800}} aria-label="simple table">
+                        <TableHead>
+                            <TableRow>
+                                <TableCell sx={{fontWeight: 'bold', backgroundColor: '#F8F8FF'}}>Product Name</TableCell>
+                                <TableCell sx={{fontWeight: 'bold', backgroundColor: '#F8F8FF'}}>Amount Sold</TableCell>
+                                <TableCell sx={{fontWeight: 'bold', backgroundColor: '#F8F8FF'}}>Total Revenue</TableCell>
+                                <TableCell sx={{fontWeight: 'bold', backgroundColor: '#F8F8FF'}}>Revenue Growth</TableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            {rows.map((row) => (
+                                <TableRow key={row.name} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
+                                    <TableCell component="th" scope="row">
+                                        {row.name}
+                                    </TableCell>
+                                    <TableCell>{row.amountsold}</TableCell>
+                                    <TableCell>{row.revenue}</TableCell>
+                                    <TableCell>{row.growth}</TableCell>
+                                    
+                                </TableRow>))}
+                        </TableBody>
+                    </Table>
+                    </TableContainer>
+
+                </Box>        
+            </Container>
+            
+            
         </div>
     );
 }
