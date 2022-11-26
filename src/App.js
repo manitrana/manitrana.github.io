@@ -30,8 +30,11 @@ import Card  from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import DistributorDataTable from './components/DistributorDataTable/DistributorDataTable';
-
-
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import InventoryIcon from '@mui/icons-material/Inventory';
+import Groups3Icon from '@mui/icons-material/Groups3';
+import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
+import { Chip } from '@mui/material';
 
 function App() {
   
@@ -65,14 +68,14 @@ function App() {
             justifyContent: 'flex-start', 
             alignItems: 'center', 
             bgcolor: 'white', 
-            border: '1px solid ghostwhite', 
+            border: '2px solid whitesmoke', 
             borderRadius: 2, 
             p: 2, 
             width: '400px', 
             height: '150px'}}>
 
             <Box>
-                <HandshakeIcon fontSize='large'/>
+                <HandshakeIcon fontSize='large' sx={{color: 'purple'}}/>
             </Box>
 
             <Box>
@@ -92,6 +95,12 @@ function App() {
               </Box>
               
             </Box>
+
+            <Box>
+              <Chip size="small" color="success" icon={<ArrowUpwardIcon />} label="10%"/>
+                
+
+            </Box>
           </Container>
         </Grid>
 
@@ -103,12 +112,15 @@ function App() {
             justifyContent: 'flex-start', 
             alignItems: 'center', 
             bgcolor: 'white', 
-            border: '1px solid ghostwhite', 
+            border: '2px solid whitesmoke', 
             borderRadius: 2, 
             p: 2, 
             width: '400px', 
             height: '150px'}}>   
 
+            <Box>
+              <RequestQuoteIcon fontSize='large' sx={{color: 'green'}}/>
+            </Box>
             <Box sx={{alignItems: 'center'}}>
               <Box sx={{ color: '#46505A' }}>Total Revenue</Box>
               <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>47.1 K</Box>
@@ -128,11 +140,16 @@ function App() {
             display: 'flex', 
             justifyContent: 'flex-start', 
             bgcolor: 'white', 
-            border: '1px solid ghostwhite', 
+            border: '2px solid whitesmoke', 
             borderRadius: 2, 
             p: 2, 
             width: '400px', 
             height: '150px'}}>       
+            
+            <Box>
+              <InventoryIcon fontSize='large' sx={{color: 'red'}}/>
+            </Box>
+
             <Box>
               <Box sx={{ color: '#46505A' }}>Total Products Sold</Box>
               <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>20 K</Box>
@@ -157,7 +174,12 @@ function App() {
             borderRadius: 2, 
             p: 2, 
             width: '400px', 
-            height: '150px'}}>       
+            height: '150px'}}>     
+
+            <Box>
+              <Groups3Icon fontSize='large' sx={{color:'orange'}}/>
+            </Box>
+
             <Box sx={{alignItems: 'center'}}>
               <Box sx={{ color: '#46505A' }}>Total Distributors</Box>
               <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>20 K</Box>

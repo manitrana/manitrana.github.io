@@ -30,7 +30,7 @@ export default function AreaChart() {
         <div>
            
 
-            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '700px', height: '400px'}}>
+            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 1, p: 3, width: '700px', height: '400px'}}>
                 <Box sx={{ display: 'flex', justifyContent: 'center', fontWeight: 'bold', color: '#46505A' }}>
                     <Line data={data}/>
                 </Box>        

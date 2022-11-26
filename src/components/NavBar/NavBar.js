@@ -6,6 +6,8 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/material/MenuItem';
 import Button from '@mui/material/Button';
+import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
+import AccountCircle from '@mui/icons-material/AccountCircle';
 
 
 /* Nav Bar element */
@@ -19,10 +21,22 @@ export default function NavBar() {
             <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
                 <MenuIcon/>
             </IconButton>
-            <Typography variant="h5" fontWeight="bold" component="div" sx={{ flexGrow: 1 }}>
+            <Typography variant="h5" fontWeight="light" component="div" sx={{ flexGrow: 1 }}>
+                <PointOfSaleIcon/>
                 Sales 360            
             </Typography>
-            <Button color="inherit">Login</Button>
+            
+
+            <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                color="inherit">
+                    <AccountCircle />
+                    <Button color="inherit">Login</Button>
+            </IconButton>
+
         </Toolbar>
     </AppBar>
     )
