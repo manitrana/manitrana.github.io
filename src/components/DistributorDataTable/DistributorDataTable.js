@@ -8,6 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+import { typographyVariant } from "@mui/system";
 
 export default function DistributorDataTable() {
 
@@ -26,6 +27,8 @@ export default function DistributorDataTable() {
         <div>
 
             <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '700px', height: '350px'}}>
+                <Box sx={{display: 'flex', 
+            justifyContent: 'flex-start', fontWeight: 'bold'}}>Top Distributors</Box>
                 <Box sx={{ display: 'flex', justifyContent: 'center', fontWeight: 'bold', color: '#46505A' }}>
 
                     <TableContainer component={Paper}>

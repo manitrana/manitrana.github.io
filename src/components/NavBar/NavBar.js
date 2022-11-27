@@ -16,7 +16,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 
 export default function NavBar() {
     return (
-        <AppBar position="static" sx={{bgcolor: 'black'}}>
+        <AppBar position="static" sx={{bgcolor: '#212121'}}>
         <Toolbar>
             <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
                 <MenuIcon/>

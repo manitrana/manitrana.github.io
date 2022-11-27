@@ -75,31 +75,21 @@ function App() {
             height: '150px'}}>
 
             <Box>
-                <HandshakeIcon fontSize='large' sx={{color: 'purple'}}/>
+                <HandshakeIcon fontSize='large' sx={{color: '#0075B0'}}/>
             </Box>
 
             <Box>
               
               <Box sx={{ color: '#46505A' }}>Total Sales</Box>
 
-              <Box sx={{color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>128.3 K</Box>
+              <Box sx={{color: '#0075B0', fontSize: 24, fontWeight: 'medium' }}>1,284,12 K</Box>
               
-              <Box sx={{display: 'flex', direction: 'row'}}>
-                <ArrowUpwardIcon sx={{color: '#009688'}}/>
-                <Box sx={{ color: '#009688', fontWeight: 'bold', fontSize: 14,}}>
-                  10%
-                </Box>
-                <Box sx={{ color: 'lightgray', display: 'inline', fontSize: 14 }}>
-                  vs. last month
-                </Box>
-              </Box>
+              
               
             </Box>
 
             <Box>
               <Chip size="small" color="success" icon={<ArrowUpwardIcon />} label="10%"/>
-                
-
             </Box>
           </Container>
         </Grid>
@@ -109,7 +99,7 @@ function App() {
           <Container sx=
           {{
             display: 'flex', 
-            justifyContent: 'flex-start', 
+            justifyContent: 'flex-start',
             alignItems: 'center', 
             bgcolor: 'white', 
             border: '2px solid whitesmoke', 
@@ -118,18 +108,25 @@ function App() {
             width: '400px', 
             height: '150px'}}>   
 
-            <Box>
-              <RequestQuoteIcon fontSize='large' sx={{color: 'green'}}/>
-            </Box>
-            <Box sx={{alignItems: 'center'}}>
-              <Box sx={{ color: '#46505A' }}>Total Revenue</Box>
-              <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>47.1 K</Box>
-              <Box sx={{ color: 'red', display: 'inline', fontWeight: 'bold', mx: 0.5, fontSize: 14,}}>
-                <ArrowDownwardIcon/>
-                7%
+            
+
+            <Grid sx={{display: 'flex'}}>
+
+              <Box sx={{order: '1'}}>
+                <RequestQuoteIcon fontSize='large' sx={{color: '#995D81'}}/>
               </Box>
-              <Box sx={{ color: 'lightgray', display: 'inline', fontSize: 14 }}>vs. last month</Box>
-            </Box>
+
+              <Box sx={{order: '2'}}>
+                <Box sx={{ color: '#46505A' }}>Total Revenue</Box>
+                <Box sx={{ color: '#995D81', fontSize: 24, fontWeight: 'medium' }}>$ 589,287,189</Box>
+              </Box>
+              
+              <Box sx={{order: '3', justifyContent: 'flex-end'}}>
+                <Chip size="small" color="error" icon={<ArrowDownwardIcon />} label="7%"/>
+              </Box>
+
+            </Grid>
+            
           </Container>
         </Grid>
 
@@ -147,18 +144,18 @@ function App() {
             height: '150px'}}>       
             
             <Box>
-              <InventoryIcon fontSize='large' sx={{color: 'red'}}/>
+              <InventoryIcon fontSize='large' sx={{color: '#0075B0'}}/>
             </Box>
 
             <Box>
               <Box sx={{ color: '#46505A' }}>Total Products Sold</Box>
-              <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>20 K</Box>
-              <Box sx={{ color: '#009688', display: 'inline', fontWeight: 'bold', mx: 0.5, fontSize: 14,}}>
-                <ArrowUpwardIcon/>
-                17%
-              </Box>
-              <Box sx={{ color: 'lightgray', display: 'inline', fontSize: 14 }}>vs. last month</Box>
+              <Box sx={{ color: '#0075B0', fontSize: 24, fontWeight: 'medium' }}>20 K</Box>
             </Box>
+
+            <Box>
+              <Chip size="small" color="error" icon={<ArrowDownwardIcon />} label="4%"/>
+            </Box>
+
           </Container>
         </Grid>
 
@@ -177,18 +174,18 @@ function App() {
             height: '150px'}}>     
 
             <Box>
-              <Groups3Icon fontSize='large' sx={{color:'orange'}}/>
+              <Groups3Icon fontSize='large' sx={{color:'#995D81'}}/>
             </Box>
 
             <Box sx={{alignItems: 'center'}}>
               <Box sx={{ color: '#46505A' }}>Total Distributors</Box>
-              <Box sx={{ color: '#173A5E', fontSize: 24, fontWeight: 'medium' }}>20 K</Box>
-              <Box sx={{ color: '#009688', display: 'inline', fontWeight: 'bold', mx: 0.5, fontSize: 14,}}>
-                <ArrowUpwardIcon/>
-                17%
-              </Box>
-              <Box sx={{ color: 'lightgray', display: 'inline', fontSize: 14 }}>vs. last month</Box>
+              <Box sx={{ color: '#995D81', fontSize: 24, fontWeight: 'medium' }}>20 K</Box>
             </Box>
+
+            <Box>
+              <Chip size="small" color="success" icon={<ArrowDownwardIcon />} label="6%"/>
+            </Box>
+
           </Container>
         </Grid>
 
