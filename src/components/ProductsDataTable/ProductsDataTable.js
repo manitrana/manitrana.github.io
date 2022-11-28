@@ -10,9 +10,46 @@ import spacing from '@mui/system';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 
+import { DataGrid } from '@mui/x-data-grid';
+
 
 export default function ProductsDataTable() {
 
+    const columns = [
+        { field: 'id', headerName: 'Product #', width: 100 },
+        {
+          field: 'firstName',
+          headerName: 'Product name',
+          width: 250,
+          editable: true,
+        },
+        {
+          field: 'lastName',
+          headerName: 'Product Type',
+          width: 175,
+          editable: true,
+        },
+        {
+          field: 'age',
+          headerName: 'Revenue Growth',
+          type: 'number',
+          width: 150,
+          editable: true,
+        }
+      ];
+      
+      const rows = [
+        { id: 19781, lastName: 'Virus Protection', firstName: 'Antivirus 1.4', age: '+35%' },
+        { id: 12993, lastName: 'Hosting', firstName: 'Cloud Instance EC5', age: '+42%' },
+        { id: 17263, lastName: 'Virus Protection', firstName: 'Norton 2.1', age: '+45%' },
+        { id: 12738, lastName: 'Virus Protection', firstName: 'Norton 2.0', age: '+16%' },
+        { id: 12093, lastName: 'Virus Protection', firstName: 'Secure Alert', age: '+8%' },
+        { id: 12983, lastName: 'Hosting', firstName: 'Enterprise Marketplace', age: '+52%' },
+        { id: 10761, lastName: 'Hosting', firstName: 'Cloud Instance EC2', age: '+23%' },
+        { id: 23098, lastName: 'Virus Protection', firstName: 'Antivirus 1.2', age: '+47%' },
+        { id: 14009, lastName: 'Virus Protection', firstName: 'Secure Alert 1.1', age: '+64%' },
+      ];
+    /* 
     function createData(name, amountsold, revenue, growth) {
         return { name, amountsold, revenue, growth };
       }
@@ -22,11 +59,43 @@ export default function ProductsDataTable() {
         createData('Value 2', 2, 2.1, 2.2),
         createData('Value 3', 3, 3.1, 3.2),
         createData('Value 4', 4, 4.1, 4.2)
-      ];
+      ]; */
     return (
         <div>
 
+            <Box sx={{ height: 400, width: '100%' }}>
+            <DataGrid rowHeight={65} sx={{
+                    boxShadow: 2,
+                    border: '2px solid white',
+                    backgroundColor: 'white',
+                    '& .MuiDataGrid-cell:hover': {
+                    color: 'primary.main',
+                    },
+                }}
+                rows={rows}
+                columns={columns}
+                pageSize={5}
+                rowsPerPageOptions={[5]}
+                checkboxSelection
+                disableSelectionOnClick
+                experimentalFeatures={{ newEditingApi: true }}
+            />
+            </Box>
+            {/* 
             <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '700px', height: '350px'}}>
+
+                <Box sx={{
+                    display: 'flex',
+                    fontSize: 'large', 
+                    fontFamily: 'Nunito',
+                    justifyContent: 'flex-start', 
+                    fontWeight: 'bold', 
+                    paddingBottom: '2vh', 
+                    color: '#626262'}}>
+                        Top Products
+                        
+                </Box>
+
                 <Box sx={{ display: 'flex', justifyContent: 'center', fontWeight: 'bold', color: '#46505A' }}>
                     
                     <TableContainer component={Paper}>
@@ -57,7 +126,7 @@ export default function ProductsDataTable() {
                 </Box>        
             </Container>
             
-            
+            */}
         </div>
     );
 }

@@ -35,6 +35,7 @@ import InventoryIcon from '@mui/icons-material/Inventory';
 import Groups3Icon from '@mui/icons-material/Groups3';
 import RequestQuoteIcon from '@mui/icons-material/RequestQuote';
 import { Chip } from '@mui/material';
+import Paper from '@mui/material/Paper';
 
 function App() {
   
@@ -60,136 +61,130 @@ function App() {
       {/* High-Level Widgets */}
       <Grid container spacing={4} padding="4vh" justify="center" align="center" direction="row">
         
-        {/* Total Crimes High-Level Widget */}
-        <Grid item xs={3}>
-          <Container sx=
-          {{
-            display: 'flex', 
-            justifyContent: 'flex-start', 
-            alignItems: 'center', 
-            bgcolor: 'white', 
-            border: '2px solid whitesmoke', 
-            borderRadius: 2, 
-            p: 2, 
-            width: '400px', 
-            height: '150px'}}>
+        
 
-            <Box>
-                <HandshakeIcon fontSize='large' sx={{color: '#0075B0'}}/>
-            </Box>
 
-            <Box>
-              
-              <Box sx={{ color: '#46505A' }}>Total Sales</Box>
+          <Grid item xs={12} md={4} lg={3}>
+            <Container sx={{
+              backgroundColor: 'white',
+              p: 2,
+              display: 'flex',
+              flexDirection: 'column',
+              height: 200}}>
+                  
+                  <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
+                    <HandshakeIcon fontSize='large' sx={{color: '#0075B0'}}/>
+                  </Box>
 
-              <Box sx={{color: '#0075B0', fontSize: 24, fontWeight: 'medium' }}>1,284,12 K</Box>
-              
-              
-              
-            </Box>
+                  
+                  <Typography color="#46505A" fontFamily="Nunito">Total Sales</Typography>
+                  <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
+                    <Typography color="#0075B0" component="p" fontSize= "32px" fontWeight="medium" fontFamily="Nunito">
+                      3,024
+                    </Typography>
+                    <Chip size="small" color="success" icon={<ArrowUpwardIcon />} label="6%"/>
+                  </Box>
+                  
 
-            <Box>
-              <Chip size="small" color="success" icon={<ArrowUpwardIcon />} label="10%"/>
-            </Box>
-          </Container>
-        </Grid>
+                  <Typography color="#A5A5A5" fontFamily="Nunito" fontSize= "14px" sx={{ flex: 1 }}>
+                    Last updated 2 minutes ago
+                  </Typography>
 
-        {/* Violent Crimes High-Level Widget */}
-        <Grid item xs={3}>
-          <Container sx=
-          {{
-            display: 'flex', 
-            justifyContent: 'flex-start',
-            alignItems: 'center', 
-            bgcolor: 'white', 
-            border: '2px solid whitesmoke', 
-            borderRadius: 2, 
-            p: 2, 
-            width: '400px', 
-            height: '150px'}}>   
+                  
+            </Container>
+          </Grid>
 
-            
+          <Grid item xs={12} md={4} lg={3}>
+            <Container sx={{
+              backgroundColor: 'white',
+              p: 2,
+              display: 'flex',
+              flexDirection: 'column',
+              height: 200}}>
+                  
+                  <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
+                    <RequestQuoteIcon fontSize='large' sx={{color: '#995D81'}}/>                    
+                  </Box>
 
-            <Grid sx={{display: 'flex'}}>
+                  <Typography color="#46505A" fontFamily="Nunito">Total Revenue</Typography>
+                  <Typography color="#995D81" component="p" fontSize= "32px" fontWeight="medium" fontFamily="Nunito">
+                    $83,924
+                  </Typography>
 
-              <Box sx={{order: '1'}}>
-                <RequestQuoteIcon fontSize='large' sx={{color: '#995D81'}}/>
-              </Box>
+                  <Typography color="#A5A5A5" fontFamily="Nunito" fontSize= "14px" sx={{ flex: 1 }}>
+                    Last updated 2 minutes ago
+                  </Typography>
 
-              <Box sx={{order: '2'}}>
-                <Box sx={{ color: '#46505A' }}>Total Revenue</Box>
-                <Box sx={{ color: '#995D81', fontSize: 24, fontWeight: 'medium' }}>$ 589,287,189</Box>
-              </Box>
-              
-              <Box sx={{order: '3', justifyContent: 'flex-end'}}>
-                <Chip size="small" color="error" icon={<ArrowDownwardIcon />} label="7%"/>
-              </Box>
+                  <Box sx={{paddingTop: '0.5vh'}}>
+                    <Chip size="small" color="success" icon={<ArrowUpwardIcon />} label="6%"/>
+                  </Box>
 
-            </Grid>
-            
-          </Container>
-        </Grid>
+            </Container>
+          </Grid>
+        
+       
 
-        {/* Assaults High-Level Widget */}
-        <Grid item xs={3}>
-          <Container sx=
-          {{
-            display: 'flex', 
-            justifyContent: 'flex-start', 
-            bgcolor: 'white', 
-            border: '2px solid whitesmoke', 
-            borderRadius: 2, 
-            p: 2, 
-            width: '400px', 
-            height: '150px'}}>       
-            
-            <Box>
-              <InventoryIcon fontSize='large' sx={{color: '#0075B0'}}/>
-            </Box>
 
-            <Box>
-              <Box sx={{ color: '#46505A' }}>Total Products Sold</Box>
-              <Box sx={{ color: '#0075B0', fontSize: 24, fontWeight: 'medium' }}>20 K</Box>
-            </Box>
+        <Grid item xs={12} md={4} lg={3}>
+            <Container sx={{
+              backgroundColor: 'white',
+              p: 2,
+              display: 'flex',
+              flexDirection: 'column',
+              height: 200}}>
+                  
+                  <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
+                    <InventoryIcon fontSize='large' sx={{color: '#0075B0'}}/>                   
+                  </Box>
 
-            <Box>
-              <Chip size="small" color="error" icon={<ArrowDownwardIcon />} label="4%"/>
-            </Box>
+                  <Typography color="#46505A" fontFamily="Nunito">Total Products</Typography>
+                  <Typography color="#0075B0" component="p" fontSize= "32px" fontWeight="medium" fontFamily="Nunito">
+                    594
+                  </Typography>
 
-          </Container>
-        </Grid>
+                  <Typography color="#A5A5A5" fontFamily="Nunito" fontSize= "14px" sx={{ flex: 1 }}>
+                    Last updated 2 minutes ago
+                  </Typography>
 
-        {/* Robberies High-Level Widget */}
-        <Grid item xs={3}>
-          <Container sx=
-          {{
-            display: 'flex', 
-            justifyContent: 'center', 
-            alignItems: 'center', 
-            bgcolor: 'white', 
-            border: '1px solid ghostwhite', 
-            borderRadius: 2, 
-            p: 2, 
-            width: '400px', 
-            height: '150px'}}>     
+                  <Box sx={{paddingTop: '0.5vh'}}>
+                    <Chip size="small" color="success" icon={<ArrowUpwardIcon />} label="6%"/>
+                  </Box>
 
-            <Box>
-              <Groups3Icon fontSize='large' sx={{color:'#995D81'}}/>
-            </Box>
+            </Container>
+          </Grid>
 
-            <Box sx={{alignItems: 'center'}}>
-              <Box sx={{ color: '#46505A' }}>Total Distributors</Box>
-              <Box sx={{ color: '#995D81', fontSize: 24, fontWeight: 'medium' }}>20 K</Box>
-            </Box>
 
-            <Box>
-              <Chip size="small" color="success" icon={<ArrowDownwardIcon />} label="6%"/>
-            </Box>
+        
 
-          </Container>
-        </Grid>
+        <Grid item xs={12} md={4} lg={3}>
+            <Container sx={{
+              backgroundColor: 'white',
+              p: 2,
+              display: 'flex',
+              flexDirection: 'column',
+              height: 200}}>
+                  
+                  <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
+                    <Groups3Icon fontSize='large' sx={{color:'#995D81'}}/>                   
+                  </Box>
 
+                  <Typography color="#46505A" fontFamily="Nunito">Total Distributors</Typography>
+                  <Typography color="#995D81" component="p" fontSize= "32px" fontWeight="medium" fontFamily="Nunito">
+                    94
+                  </Typography>
+
+                  <Typography color="#A5A5A5" fontFamily="Nunito" fontSize= "14px" sx={{ flex: 1 }}>
+                    Last updated 2 minutes ago
+                  </Typography>
+
+                  <Box sx={{paddingTop: '0.5vh'}}>
+                    <Chip size="small" color="success" icon={<ArrowUpwardIcon />} label="6%"/>
+                  </Box>
+            </Container>
+          </Grid>
       </Grid>
+
+        
         
 
 
@@ -219,7 +214,7 @@ function App() {
         <Container>
           <DistributorDataTable></DistributorDataTable>
         </Container>
-        
+
       </Grid>
       
     

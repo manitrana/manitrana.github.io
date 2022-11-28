@@ -12,6 +12,7 @@ import { typographyVariant } from "@mui/system";
 
 export default function DistributorDataTable() {
 
+
     function createData(name, location, productssold, totalsales, status) {
         return { name, location, productssold, totalsales, status };
       }
@@ -27,12 +28,22 @@ export default function DistributorDataTable() {
         <div>
 
             <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '700px', height: '350px'}}>
-                <Box sx={{display: 'flex', 
-            justifyContent: 'flex-start', fontWeight: 'bold'}}>Top Distributors</Box>
+                <Box sx={{
+                    display: 'flex',
+                    fontFamily: 'Nunito',
+                    fontSize: 'large', 
+                    justifyContent: 'flex-start', 
+                    fontWeight: 'bold', 
+                    paddingBottom: '2vh', 
+                    color: '#626262'}}>
+                        Top Distributors
+                        
+                </Box>
+
                 <Box sx={{ display: 'flex', justifyContent: 'center', fontWeight: 'bold', color: '#46505A' }}>
 
                     <TableContainer component={Paper}>
-                    <Table sx={{ minWidth: 650, maxWidth: 800}} aria-label="simple table">
+                    <Table sx={{ border: '2px solid white', boxShadow: 0, minWidth: 650, maxWidth: 800}} aria-label="simple table">
                         <TableHead>
                             <TableRow>
                                 <TableCell sx={{fontWeight: 'bold', backgroundColor: '#F8F8FF'}}>Distributor Name</TableCell>

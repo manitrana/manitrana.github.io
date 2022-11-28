@@ -8,6 +8,7 @@ import MenuIcon from '@mui/material/MenuItem';
 import Button from '@mui/material/Button';
 import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
 import AccountCircle from '@mui/icons-material/AccountCircle';
+import { Box } from "@mui/material";
 
 
 /* Nav Bar element */
@@ -21,21 +22,28 @@ export default function NavBar() {
             <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
                 <MenuIcon/>
             </IconButton>
-            <Typography variant="h5" fontWeight="light" component="div" sx={{ flexGrow: 1 }}>
-                <PointOfSaleIcon/>
-                Sales 360            
-            </Typography>
             
+            <Box sx={{display: 'flex', justifyContent: 'flex-start'}}>
+                <Typography fontFamily="Nunito" variant="h5" fontWeight="light" component="div" sx={{ flexGrow: 1 }}>
+                    <PointOfSaleIcon/>
+                    Sales 360            
+                </Typography>
+            </Box>
 
-            <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                color="inherit">
-                    <AccountCircle />
-                    <Button color="inherit">Login</Button>
-            </IconButton>
+            
+            <Box sx={{display: 'flex', paddingLeft: '150vh'}}>
+                <IconButton
+                    size="large"
+                    aria-label="account of current user"
+                    aria-controls="menu-appbar"
+                    aria-haspopup="true"
+                    color="inherit">
+                        <AccountCircle />
+                        <Button color="inherit">Login</Button>
+                </IconButton>
+            </Box>
+
+            
 
         </Toolbar>
     </AppBar>

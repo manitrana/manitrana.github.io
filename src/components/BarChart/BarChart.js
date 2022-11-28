@@ -33,6 +33,17 @@ const BarChart = () => {
     
     <div>
       <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '700px', height: '400px'}}>
+                <Box sx={{
+                    display: 'flex',
+                    fontSize: 'large', 
+                    fontFamily: 'Nunito',
+                    justifyContent: 'flex-start', 
+                    fontWeight: 'bold', 
+                    paddingBottom: '2vh', 
+                    color: '#626262'}}>
+                        Yearly Sales Tracking
+                        
+                </Box>
           <Box sx={{ display: 'flex', justifyContent: 'center', fontWeight: 'bold', color: '#46505A' }}>
             <Line data={data}/>
           </Box>        
