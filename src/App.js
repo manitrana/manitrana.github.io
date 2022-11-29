@@ -71,7 +71,7 @@ function App() {
               display: 'flex',
               borderRadius: '5px',
               flexDirection: 'column',
-              height: 200}}>
+              height: 180}}>
                   
                   <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
                     <HandshakeIcon fontSize='large' sx={{color: '#0075B0'}}/>
@@ -83,12 +83,14 @@ function App() {
                     <Typography color="#0075B0" component="p" fontSize= "32px" fontWeight="medium" fontFamily="Nunito">
                       3,024
                     </Typography>
-                    <Chip size="small" color="success" icon={<ArrowUpwardIcon />} label="6%"/>
+                    <Box sx={{paddingTop: '1.2vh', paddingLeft: '2vh'}}>
+                      <Chip size="small" color="success" icon={<ArrowUpwardIcon />} label="6%"/>
+                    </Box>
                   </Box>
                   
 
                   <Typography color="#A5A5A5" fontFamily="Nunito" fontSize= "14px" sx={{ flex: 1 }}>
-                    Last updated 2 minutes ago
+                    in the last year
                   </Typography>
 
                   
@@ -102,24 +104,26 @@ function App() {
               borderRadius: '5px',
               display: 'flex',
               flexDirection: 'column',
-              height: 200}}>
+              height: 180}}>
                   
                   <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
                     <RequestQuoteIcon fontSize='large' sx={{color: '#995D81'}}/>                    
                   </Box>
 
                   <Typography color="#46505A" fontFamily="Nunito">Total Revenue</Typography>
-                  <Typography color="#995D81" component="p" fontSize= "32px" fontWeight="medium" fontFamily="Nunito">
-                    $83,924
-                  </Typography>
-
-                  <Typography color="#A5A5A5" fontFamily="Nunito" fontSize= "14px" sx={{ flex: 1 }}>
-                    Last updated 2 minutes ago
-                  </Typography>
-
-                  <Box sx={{paddingTop: '0.5vh'}}>
-                    <Chip size="small" color="success" icon={<ArrowUpwardIcon />} label="6%"/>
+                  <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
+                    <Typography color="#995D81" component="p" fontSize= "32px" fontWeight="medium" fontFamily="Nunito">
+                      $83,924
+                    </Typography>
+                    <Box sx={{paddingTop: '1.2vh', paddingLeft: '2vh'}}>
+                      <Chip size="small" color="error" icon={<ArrowDownwardIcon />} label="3%"/>
+                    </Box>
                   </Box>
+                  <Typography color="#A5A5A5" fontFamily="Nunito" fontSize= "14px" sx={{ flex: 1 }}>
+                  in the last year
+                  </Typography>
+
+                  
 
             </Container>
           </Grid>
@@ -134,24 +138,26 @@ function App() {
               borderRadius: '5px',
               display: 'flex',
               flexDirection: 'column',
-              height: 200}}>
+              height: 180}}>
                   
                   <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
                     <InventoryIcon fontSize='large' sx={{color: '#0075B0'}}/>                   
                   </Box>
 
                   <Typography color="#46505A" fontFamily="Nunito">Total Products</Typography>
-                  <Typography color="#0075B0" component="p" fontSize= "32px" fontWeight="medium" fontFamily="Nunito">
-                    594
-                  </Typography>
+                  <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
+                    <Typography color="#0075B0" component="p" fontSize= "32px" fontWeight="medium" fontFamily="Nunito">
+                      594
+                    </Typography>
+                    
+                  </Box>
+                  
 
                   <Typography color="#A5A5A5" fontFamily="Nunito" fontSize= "14px" sx={{ flex: 1 }}>
-                    Last updated 2 minutes ago
+                    All Regions
                   </Typography>
 
-                  <Box sx={{paddingTop: '0.5vh'}}>
-                    <Chip size="small" color="success" icon={<ArrowUpwardIcon />} label="6%"/>
-                  </Box>
+                  
 
             </Container>
           </Grid>
@@ -166,7 +172,7 @@ function App() {
               borderRadius: '5px',
               display: 'flex',
               flexDirection: 'column',
-              height: 200}}>
+              height: 180}}>
                   
                   <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
                     <Groups3Icon fontSize='large' sx={{color:'#995D81'}}/>                   
@@ -178,18 +184,16 @@ function App() {
                   </Typography>
 
                   <Typography color="#A5A5A5" fontFamily="Nunito" fontSize= "14px" sx={{ flex: 1 }}>
-                    Last updated 2 minutes ago
+                    All Regions
                   </Typography>
 
-                  <Box sx={{paddingTop: '0.5vh'}}>
-                    <Chip size="small" color="success" icon={<ArrowUpwardIcon />} label="6%"/>
-                  </Box>
+                  
             </Container>
           </Grid>
       </Grid>
 
 
-      <Grid display="flex" justify="center" direction="row" paddingRight="5vh">
+      <Grid display="flex" justify="center" direction="row" paddingRight="4vh" paddingLeft="1vh">
         <Container>
           <BarChart></BarChart>
         </Container>
@@ -199,7 +203,7 @@ function App() {
         
       </Grid>
 
-      <Grid display="flex" justify="center" direction="row" paddingTop="2vh" paddingRight="5vh">
+      <Grid display="flex" justify="center" direction="row" paddingTop="2vh" paddingRight="4vh" paddingLeft="1vh">
         <Container>
           <ProductsDataTable></ProductsDataTable>
         </Container>

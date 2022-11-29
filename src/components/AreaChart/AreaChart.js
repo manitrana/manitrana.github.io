@@ -44,7 +44,7 @@ export default function AreaChart() {
            
 
            
-            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 1, p: 3, width: '850px', height: '500px'}}>
+            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 1, p: 3, width: '900px', height: '500px'}}>
                 <Box sx={{
                     display: 'flex',
                     fontFamily: 'Nunito',

@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import { Box } from "@mui/material";
+import CycloneIcon from '@mui/icons-material/Cyclone';
 
 
 /* Nav Bar element */
@@ -19,11 +20,13 @@ export default function NavBar() {
     return (
         <AppBar position="static" sx={{bgcolor: '#212121'}}>
         <Toolbar>
-            <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+            {/*             <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
                 <MenuIcon/>
             </IconButton>
-            
+            */}
+
             <Box sx={{display: 'flex', justifyContent: 'flex-start'}}>
+                <CycloneIcon fontSize="large" sx={{paddingRight: '1vh'}}/>
                 <Typography fontFamily="Nunito" variant="h5" fontWeight="light" component="div" sx={{ flexGrow: 1 }}>
                     
                     Sales Dashboard            
@@ -31,7 +34,7 @@ export default function NavBar() {
             </Box>
 
             
-            <Box sx={{display: 'flex', paddingLeft: '160vh'}}>
+            <Box sx={{display: 'flex', paddingLeft: '165vh'}}>
                 <IconButton
                     size="large"
                     aria-label="account of current user"
