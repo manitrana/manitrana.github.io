@@ -34,7 +34,7 @@ export default function NavBar() {
             </Box>
 
             
-            <Box sx={{display: 'flex', paddingLeft: '165vh'}}>
+            <Box sx={{display: 'flex', paddingLeft: '140vh'}}>
                 <IconButton
                     size="large"
                     aria-label="account of current user"

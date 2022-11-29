@@ -28,7 +28,7 @@ export default function DistributorDataTable() {
     return (
         <div>
 
-            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '900px', height: '550px'}}>
+            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '810px', height: '550px'}}>
                 <Typography sx={{
                     display: 'flex',
                     fontFamily: 'Nunito',

@@ -33,7 +33,7 @@ const BarChart = () => {
   return (
     
     <div>
-      <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '900px', height: '500px'}}>
+      <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '810px', height: '500px'}}>
                 <Box sx={{
                     display: 'flex',
                     fontSize: '20px', 

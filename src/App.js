@@ -193,7 +193,7 @@ function App() {
       </Grid>
 
 
-      <Grid display="flex" justify="center" direction="row" paddingRight="4vh" paddingLeft="1vh">
+      <Grid display="flex" justify="center" direction="row" paddingRight="3vh" paddingLeft="1vh">
         <Container>
           <BarChart></BarChart>
         </Container>
@@ -203,7 +203,7 @@ function App() {
         
       </Grid>
 
-      <Grid display="flex" justify="center" direction="row" paddingTop="2vh" paddingRight="4vh" paddingLeft="1vh">
+      <Grid display="flex" justify="center" direction="row" paddingTop="2vh" paddingRight="3vh" paddingLeft="1vh">
         <Container>
           <ProductsDataTable></ProductsDataTable>
         </Container>
