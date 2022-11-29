@@ -40,7 +40,6 @@ export default function AreaChart() {
                     fontWeight: 'bold', 
                     paddingBottom: '2vh', 
                     color: '#626262'}}>
-                        
                         Sales by Region                        
                 </Box>
 

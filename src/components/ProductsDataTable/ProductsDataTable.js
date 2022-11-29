@@ -73,7 +73,7 @@ export default function ProductsDataTable() {
               color: '#995D81',
               fontWeight: 'bold',
                     },
-              '& .MuiDataGrid-columnHeaders': {
+                '& .MuiDataGrid-columnHeaders': {
                 color: 'black',
                 backgroundColor: 'ghostwhite',
             },
