@@ -20,21 +20,17 @@ export default function ProductsDataTable() {
         {
           field: 'firstName',
           headerName: 'Product name',
-          width: 250,
-          editable: true,
+          width: 250
         },
         {
           field: 'lastName',
           headerName: 'Product Type',
           width: 175,
-          editable: true,
         },
         {
           field: 'age',
           headerName: 'Revenue Growth',
-          type: 'number',
           width: 150,
-          editable: true,
         }
       ];
       
@@ -64,13 +60,23 @@ export default function ProductsDataTable() {
         <div>
 
             <Box sx={{ height: 400, width: '100%' }}>
-            <DataGrid rowHeight={65} sx={{
-                    boxShadow: 2,
-                    border: '2px solid white',
-                    backgroundColor: 'white',
-                    '& .MuiDataGrid-cell:hover': {
-                    color: 'primary.main',
+            <DataGrid 
+              rowHeight={65} sx={{
+              boxShadow: 2,
+              fontFamily: 'Nunito',
+              border: '2px solid white',
+              backgroundColor: 'white',
+              '& .MuiDataGrid-row': {
+                color: '#626262',
+              },
+              '& .MuiDataGrid-row:hover': {
+              color: '#995D81',
+              fontWeight: 'bold',
                     },
+              '& .MuiDataGrid-columnHeaders': {
+                color: 'black',
+                backgroundColor: 'ghostwhite',
+            },
                 }}
                 rows={rows}
                 columns={columns}
@@ -81,6 +87,7 @@ export default function ProductsDataTable() {
                 experimentalFeatures={{ newEditingApi: true }}
             />
             </Box>
+            
             {/* 
             <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '700px', height: '350px'}}>
 
@@ -127,6 +134,7 @@ export default function ProductsDataTable() {
             </Container>
             
             */}
+
         </div>
     );
 }
