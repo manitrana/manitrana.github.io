@@ -6,36 +6,37 @@ import { Bar } from "react-chartjs-2";
 import { Line } from "react-chartjs-2";
 
 const BarChart = () => {
+  
+  Chart.defaults.font.family = "Nunito";
+  Chart.defaults.font.size = 12;
+
+
   const labels = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
   const data = {
     labels: labels,
     datasets: [
       {
-        label: "2020",
+        label: "2021 Sales",
         backgroundColor: "ghostwhite",
         borderColor: "lightblue",
         fill: true,
-        data: [17, 5, 12, 17, 34, 27, 2, 20, 30, 45, 31, 54],
-      },
-      /*
-      {
-        label: "Last Year",
-        backgroundColor: "ghostwhite",
-        borderColor: "green",
-        fill: true,
-        data: [13, 2, 27, 14, 31, 12, 4, 22, 27, 34, 29, 11],
-      }
-      */
+        lineTension: 0.4,
+        data: [2317, 6225, 4112, 2317, 3334, 2127, 2521, 3120, 1430, 2356, 4231, 2454],
+        animation: {
+          duration: 1500,
+          easing: 'easeInCubic'
+        },
+      } 
     ],
     
   };
   return (
     
     <div>
-      <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '700px', height: '400px'}}>
+      <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '850px', height: '500px'}}>
                 <Box sx={{
                     display: 'flex',
-                    fontSize: 'large', 
+                    fontSize: '20px', 
                     fontFamily: 'Nunito',
                     justifyContent: 'flex-start', 
                     fontWeight: 'bold', 

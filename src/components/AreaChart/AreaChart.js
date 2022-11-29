@@ -2,27 +2,40 @@ import React from "react";
 import { Line } from "react-chartjs-2";
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+import { Scatter } from "react-chartjs-2";
+import { Radar } from "react-chartjs-2";
+import { Pie } from "react-chartjs-2";
+import { width } from "@mui/system";
+
+
+
 
 export default function AreaChart() {
 
     const data = {
         labels: ["Tokyo",	"Mumbai",	"Mexico City",	"Shanghai",	"Sao Paulo",	"New York",	"Karachi","Buenos Aires",	"Delhi","Moscow"],
         datasets: [{
-            label: 'Series 1', // Name the series
-            data: [3500,3550,2424,4040,4141,4111,4544,2247,5555,6811], // Specify the data values array
-            fill: true,
-            borderColor: '#4A3857', // Add custom color border (Line)
-            backgroundColor: '#4A3857', // Add custom color background (Points and Fill)
-            borderWidth: 1 // Specify bar border width
+            label: 'Virus Protection', // Name the series
+            data: [3500,3550,2424,4040,3241,4111,4544,2247,5555,6811], // Specify the data values array
+            backgroundColor: '#fcc2e5',
+            borderColor: '#b37299', // Add custom color background (Points and Fill)
+            borderWidth: 2, // Specify bar border width
+            animation: {
+                duration: 2500,
+              },
         },
         {
-            label: 'Series 2', // Name the series
-            data: [1288, 8942,4545,7588,1499,242,1417,5504,75,457], // Specify the data values array
-            fill: true,
-            borderColor: '#954063', // Add custom color border (Line)
-            backgroundColor: '#954063', // Add custom color background (Points and Fill)
-            borderWidth: 1 // Specify bar border width
-        }]
+            label: 'Hosting', // Name the series
+            data: [2500,4750,3414,3030,4211,2111,3924,2319,1239,3124], // Specify the data values array
+            backgroundColor: '#47bbf5',
+            borderColor: '#0075b0', // Add custom color background (Points and Fill)
+            borderWidth: 2, // Specify bar border width
+            animation: {
+                duration: 1500,
+                easing: 'easeInCubic'
+              },
+        }
+        ]
     };
     
     return (
@@ -31,20 +44,20 @@ export default function AreaChart() {
            
 
            
-            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 1, p: 3, width: '700px', height: '400px'}}>
+            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 1, p: 3, width: '850px', height: '500px'}}>
                 <Box sx={{
                     display: 'flex',
                     fontFamily: 'Nunito',
-                    fontSize: 'large', 
+                    fontSize: '20px', 
                     justifyContent: 'flex-start', 
                     fontWeight: 'bold', 
                     paddingBottom: '2vh', 
                     color: '#626262'}}>
-                        Sales by Region                        
+                        Regional Sales by Product Type                        
                 </Box>
 
                 <Box sx={{ display: 'flex', justifyContent: 'center', fontWeight: 'bold', color: '#46505A' }}>
-                    <Line data={data}/>
+                    <Line data={data} sx={{width: '10px', height: '10px'}}/>
                 </Box>        
             </Container>
             

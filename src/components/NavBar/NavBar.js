@@ -25,13 +25,13 @@ export default function NavBar() {
             
             <Box sx={{display: 'flex', justifyContent: 'flex-start'}}>
                 <Typography fontFamily="Nunito" variant="h5" fontWeight="light" component="div" sx={{ flexGrow: 1 }}>
-                    <PointOfSaleIcon/>
-                    Sales 360            
+                    
+                    Sales Dashboard            
                 </Typography>
             </Box>
 
             
-            <Box sx={{display: 'flex', paddingLeft: '150vh'}}>
+            <Box sx={{display: 'flex', paddingLeft: '160vh'}}>
                 <IconButton
                     size="large"
                     aria-label="account of current user"

@@ -9,6 +9,7 @@ import Paper from '@mui/material/Paper';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import { typographyVariant } from "@mui/system";
+import { Typography } from "@mui/material";
 
 export default function DistributorDataTable() {
 
@@ -27,8 +28,8 @@ export default function DistributorDataTable() {
     return (
         <div>
 
-            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '700px', height: '350px'}}>
-                <Box sx={{
+            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '850px', height: '550px'}}>
+                <Typography sx={{
                     display: 'flex',
                     fontFamily: 'Nunito',
                     fontSize: 'large', 
@@ -36,9 +37,8 @@ export default function DistributorDataTable() {
                     fontWeight: 'bold', 
                     paddingBottom: '2vh', 
                     color: '#626262'}}>
-                        Top Distributors
-                        
-                </Box>
+                        Top Distributors                
+                </Typography>
 
                 <Box sx={{ display: 'flex', justifyContent: 'center', fontWeight: 'bold', color: '#46505A' }}>
 

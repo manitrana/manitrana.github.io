@@ -69,6 +69,7 @@ function App() {
               backgroundColor: 'white',
               p: 2,
               display: 'flex',
+              borderRadius: '5px',
               flexDirection: 'column',
               height: 200}}>
                   
@@ -98,6 +99,7 @@ function App() {
             <Container sx={{
               backgroundColor: 'white',
               p: 2,
+              borderRadius: '5px',
               display: 'flex',
               flexDirection: 'column',
               height: 200}}>
@@ -129,6 +131,7 @@ function App() {
             <Container sx={{
               backgroundColor: 'white',
               p: 2,
+              borderRadius: '5px',
               display: 'flex',
               flexDirection: 'column',
               height: 200}}>
@@ -160,6 +163,7 @@ function App() {
             <Container sx={{
               backgroundColor: 'white',
               p: 2,
+              borderRadius: '5px',
               display: 'flex',
               flexDirection: 'column',
               height: 200}}>
@@ -184,20 +188,8 @@ function App() {
           </Grid>
       </Grid>
 
-        
-        
 
-
-
-      {/* Interactive Data Charts */}
-      <Grid marginRight="10vh" marginLeft="10vh" marginBottom="5vh" display="flex" justifyContent="flex-start">
-        
-        {/* Importing all components */}
-        
-      
-      </Grid>
-
-      <Grid display="flex" justify="center" direction="row" margin="2vh">
+      <Grid display="flex" justify="center" direction="row" paddingRight="5vh">
         <Container>
           <BarChart></BarChart>
         </Container>
@@ -207,7 +199,7 @@ function App() {
         
       </Grid>
 
-      <Grid display="flex" justify="center" direction="row" margin="2vh">
+      <Grid display="flex" justify="center" direction="row" paddingTop="2vh" paddingRight="5vh">
         <Container>
           <ProductsDataTable></ProductsDataTable>
         </Container>

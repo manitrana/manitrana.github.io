@@ -9,6 +9,8 @@ import Paper from '@mui/material/Paper';
 import spacing from '@mui/system';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+import { Typography } from "@mui/material";
+
 
 import { DataGrid } from '@mui/x-data-grid';
 
@@ -58,35 +60,54 @@ export default function ProductsDataTable() {
       ]; */
     return (
         <div>
+            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '850px', height: '550px'}}>
+              
+              <Typography sx={{
+                    display: 'flex',
+                    fontFamily: 'Nunito',
+                    fontSize: 'large', 
+                    justifyContent: 'flex-start', 
+                    fontWeight: 'bold', 
+                    paddingBottom: '2vh', 
+                    color: '#626262'}}>
+                        Top Products                
+              </Typography>
 
-            <Box sx={{ height: 400, width: '100%' }}>
-            <DataGrid 
-              rowHeight={65} sx={{
-              boxShadow: 2,
-              fontFamily: 'Nunito',
-              border: '2px solid white',
-              backgroundColor: 'white',
-              '& .MuiDataGrid-row': {
-                color: '#626262',
-              },
-              '& .MuiDataGrid-row:hover': {
-              color: '#995D81',
-              fontWeight: 'bold',
-                    },
-                '& .MuiDataGrid-columnHeaders': {
-                color: 'black',
-                backgroundColor: 'ghostwhite',
-            },
-                }}
-                rows={rows}
-                columns={columns}
-                pageSize={5}
-                rowsPerPageOptions={[5]}
-                checkboxSelection
-                disableSelectionOnClick
-                experimentalFeatures={{ newEditingApi: true }}
-            />
-            </Box>
+              <Box sx={{ height: 450, width: '100%' }}>
+              <DataGrid 
+                rowHeight={65} sx={{
+                boxShadow: 0,
+                fontFamily: 'Nunito',
+                border: '2px solid white',
+                backgroundColor: 'white',
+                '& .MuiDataGrid-row': {
+                  color: '#626262',
+                },
+                '& .MuiDataGrid-row:hover': {
+                color: '#995D81',
+                fontWeight: 'bold',
+                      },
+                      '& .MuiDataGrid-columnHeader': {
+                        
+                        fontSize: '16px'
+                      },
+                      '& .MuiDataGrid-columnSeparator': {
+                        color: 'white'
+                      },
+                      
+                  }}
+                  rows={rows}
+                  columns={columns}
+                  pageSize={5}
+                  rowsPerPageOptions={[5]}
+                  checkboxSelection
+                  disableSelectionOnClick
+                  experimentalFeatures={{ newEditingApi: true }}
+              />
+              </Box>
+            </Container>
+
+            
             
             {/* 
             <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '700px', height: '350px'}}>
