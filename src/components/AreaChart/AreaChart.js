@@ -6,6 +6,7 @@ import { Scatter } from "react-chartjs-2";
 import { Radar } from "react-chartjs-2";
 import { Pie } from "react-chartjs-2";
 import { width } from "@mui/system";
+import PublicIcon from '@mui/icons-material/Public';
 
 
 
@@ -13,7 +14,7 @@ import { width } from "@mui/system";
 export default function AreaChart() {
 
     const data = {
-        labels: ["Tokyo",	"Mumbai",	"Mexico City",	"Shanghai",	"Sao Paulo",	"New York",	"Karachi","Buenos Aires",	"Delhi","Moscow"],
+        labels: ["Japan", "India", "Mexico", "China", "Brazil",	"US-East", "US-West", "Argentina", "Sri Lanka", "UK"],
         datasets: [{
             label: 'Virus Protection', // Name the series
             data: [3500,3550,2424,4040,3241,4111,4544,2247,5555,6811], // Specify the data values array
@@ -44,15 +45,16 @@ export default function AreaChart() {
            
 
            
-            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 1, p: 3, width: '810px', height: '500px'}}>
+            <Container sx={{bgcolor: 'white', border: '1px solid white', borderRadius: 1, p: 3, width: '810px', height: '500px'}}>
                 <Box sx={{
                     display: 'flex',
                     fontFamily: 'Nunito',
-                    fontSize: '20px', 
-                    justifyContent: 'flex-start', 
+                    fontSize: '24px', 
+                    justifyContent: 'center', 
                     fontWeight: 'bold', 
-                    paddingBottom: '2vh', 
-                    color: '#626262'}}>
+                    paddingBottom: '4vh', 
+                    color: '#C65498'}}>
+                        <PublicIcon sx={{paddingTop: '0.4vh', paddingRight: '0.4vh', color: '#C65498'}}/>
                         Regional Sales by Product Type                        
                 </Box>
 

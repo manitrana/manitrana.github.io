@@ -18,7 +18,7 @@ import CycloneIcon from '@mui/icons-material/Cyclone';
 
 export default function NavBar() {
     return (
-        <AppBar position="static" sx={{bgcolor: '#212121'}}>
+        <AppBar position="static" sx={{bgcolor: '#292929'}}>
         <Toolbar>
             {/*             <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
                 <MenuIcon/>

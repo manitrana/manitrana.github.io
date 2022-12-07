@@ -59,14 +59,13 @@ function App() {
       
 
       {/* High-Level Widgets */}
-      <Grid container spacing={4} padding="4vh" justify="center" align="center" direction="row">
+      <Grid container spacing={1} padding="2vh" justify="center" align="center" direction="row">
         
-        
-
 
           <Grid item xs={12} md={4} lg={3}>
             <Container sx={{
               backgroundColor: 'white',
+              border: '1px solid white',
               p: 2,
               display: 'flex',
               borderRadius: '5px',
@@ -74,24 +73,20 @@ function App() {
               height: 180}}>
                   
                   <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
-                    <HandshakeIcon fontSize='large' sx={{color: '#0075B0'}}/>
+                    <HandshakeIcon fontSize='large' sx={{color: '#0075b0'}}/>
                   </Box>
 
                   
-                  <Typography color="#46505A" fontFamily="Nunito">Total Sales</Typography>
+                  <Typography color="gray" fontFamily="Nunito">Total Sales</Typography>
                   <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
-                    <Typography color="#0075B0" component="p" fontSize= "32px" fontWeight="medium" fontFamily="Nunito">
+                    <Typography color="#0075b0" component="p" fontSize= "36px" fontWeight="bold" fontFamily="Nunito">
                       3,024
                     </Typography>
-                    <Box sx={{paddingTop: '1.2vh', paddingLeft: '2vh'}}>
-                      <Chip size="small" color="success" icon={<ArrowUpwardIcon />} label="6%"/>
-                    </Box>
                   </Box>
-                  
 
-                  <Typography color="#A5A5A5" fontFamily="Nunito" fontSize= "14px" sx={{ flex: 1 }}>
-                    in the last year
-                  </Typography>
+                  <Box sx={{paddingTop: '.5vh'}}>
+                    <Chip size="small" color="success" icon={<ArrowUpwardIcon />} label="6%"/>
+                  </Box>
 
                   
             </Container>
@@ -100,6 +95,7 @@ function App() {
           <Grid item xs={12} md={4} lg={3}>
             <Container sx={{
               backgroundColor: 'white',
+              border: '1px solid white',
               p: 2,
               borderRadius: '5px',
               display: 'flex',
@@ -107,23 +103,20 @@ function App() {
               height: 180}}>
                   
                   <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
-                    <RequestQuoteIcon fontSize='large' sx={{color: '#995D81'}}/>                    
+                    <RequestQuoteIcon fontSize='large' sx={{color: '#C65498'}}/>                    
                   </Box>
 
-                  <Typography color="#46505A" fontFamily="Nunito">Total Revenue</Typography>
+                  <Typography color="gray" fontFamily="Nunito">Total Revenue</Typography>
                   <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
-                    <Typography color="#995D81" component="p" fontSize= "32px" fontWeight="medium" fontFamily="Nunito">
+                    <Typography color="#C65498" component="p" fontSize= "36px" fontWeight="bold" fontFamily="Nunito">
                       $83,924
                     </Typography>
-                    <Box sx={{paddingTop: '1.2vh', paddingLeft: '2vh'}}>
-                      <Chip size="small" color="error" icon={<ArrowDownwardIcon />} label="3%"/>
-                    </Box>
+                    
                   </Box>
-                  <Typography color="#A5A5A5" fontFamily="Nunito" fontSize= "14px" sx={{ flex: 1 }}>
-                  in the last year
-                  </Typography>
-
                   
+                  <Box sx={{paddingTop: '.5vh'}}>
+                    <Chip size="small" color="error" icon={<ArrowDownwardIcon />} label="3%"/>
+                  </Box>
 
             </Container>
           </Grid>
@@ -134,6 +127,7 @@ function App() {
         <Grid item xs={12} md={4} lg={3}>
             <Container sx={{
               backgroundColor: 'white',
+              border: '1px solid white',
               p: 2,
               borderRadius: '5px',
               display: 'flex',
@@ -141,24 +135,16 @@ function App() {
               height: 180}}>
                   
                   <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
-                    <InventoryIcon fontSize='large' sx={{color: '#0075B0'}}/>                   
+                    <InventoryIcon fontSize='large' sx={{color: '#0075b0'}}/>                   
                   </Box>
 
-                  <Typography color="#46505A" fontFamily="Nunito">Total Products</Typography>
+                  <Typography color="gray" fontFamily="Nunito">Total Products</Typography>
                   <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
-                    <Typography color="#0075B0" component="p" fontSize= "32px" fontWeight="medium" fontFamily="Nunito">
+                    <Typography color="#0075b0" component="p" fontSize= "36px" fontWeight="bold" fontFamily="Nunito">
                       594
                     </Typography>
                     
                   </Box>
-                  
-
-                  <Typography color="#A5A5A5" fontFamily="Nunito" fontSize= "14px" sx={{ flex: 1 }}>
-                    All Regions
-                  </Typography>
-
-                  
-
             </Container>
           </Grid>
 
@@ -168,6 +154,7 @@ function App() {
         <Grid item xs={12} md={4} lg={3}>
             <Container sx={{
               backgroundColor: 'white',
+              border: '1px solid white',
               p: 2,
               borderRadius: '5px',
               display: 'flex',
@@ -175,21 +162,15 @@ function App() {
               height: 180}}>
                   
                   <Box sx={{display: 'flex', direction: 'row', justifyContent:'center'}}>
-                    <Groups3Icon fontSize='large' sx={{color:'#995D81'}}/>                   
+                    <Groups3Icon fontSize='large' sx={{color:'#C65498'}}/>                   
                   </Box>
 
-                  <Typography color="#46505A" fontFamily="Nunito">Total Distributors</Typography>
-                  <Typography color="#995D81" component="p" fontSize= "32px" fontWeight="medium" fontFamily="Nunito">
+                  <Typography color="gray" fontFamily="Nunito">Total Distributors</Typography>
+                  <Typography color="#C65498" component="p" fontSize= "36px" fontWeight="bold" fontFamily="Nunito">
                     94
-                  </Typography>
-
-                  <Typography color="#A5A5A5" fontFamily="Nunito" fontSize= "14px" sx={{ flex: 1 }}>
-                    All Regions
-                  </Typography>
-
-                  
+                  </Typography>         
             </Container>
-          </Grid>
+          </Grid>   
       </Grid>
 
 
@@ -212,10 +193,6 @@ function App() {
         </Container>
 
       </Grid>
-      
-    
-
-      
       
 
   {/*End of React content*/}

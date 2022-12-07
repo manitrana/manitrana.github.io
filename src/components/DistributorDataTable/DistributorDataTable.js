@@ -10,6 +10,8 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import { typographyVariant } from "@mui/system";
 import { Typography } from "@mui/material";
+import Groups3Icon from '@mui/icons-material/Groups3';
+
 
 export default function DistributorDataTable() {
 
@@ -19,50 +21,54 @@ export default function DistributorDataTable() {
       }
       
       const rows = [
-        createData('Value 1', 'NYC', 134, 4000, 'Yes'),
-        createData('Value 2', 'NYC', 134, 4000, 'Yes'),
-        createData('Value 3', 'NYC', 134, 4000, 'Yes'),
-        createData('Value 4', 'NYC', 134, 4000, 'Yes')
+        createData('Kaspersky', 'NYC', 134, 4209, 'Yes'),
+        createData('Norton', 'London', 134, 3724, 'Yes'),
+        createData('PCOwl', 'Pasadena', 134, 3298, 'Yes'),
+        createData('Secure Inc.', 'Redmond, WA', 134, 5281, 'Yes'),
+        createData('Kaspersky', 'NYC', 134, 4209, 'Yes'),
+        createData('Norton', 'London', 134, 3724, 'Yes'),
+        createData('PCOwl', 'Pasadena', 134, 3298, 'Yes'),
       ];
 
     return (
         <div>
 
-            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '810px', height: '550px'}}>
+            <Container sx={{bgcolor: 'white', border: '1px solid white', borderRadius: 2, p: 3, width: '810px', height: '550px'}}>
                 <Typography sx={{
                     display: 'flex',
                     fontFamily: 'Nunito',
-                    fontSize: 'large', 
-                    justifyContent: 'flex-start', 
+                    fontSize: '26px', 
+                    justifyContent: 'center', 
                     fontWeight: 'bold', 
-                    paddingBottom: '2vh', 
-                    color: '#626262'}}>
-                        Top Distributors                
+                    paddingBottom: '4vh', 
+                    color: 'gray'}}>
+                        <Groups3Icon/>
+                        All Distributors                
                 </Typography>
 
                 <Box sx={{ display: 'flex', justifyContent: 'center', fontWeight: 'bold', color: '#46505A' }}>
 
                     <TableContainer component={Paper}>
-                    <Table sx={{ border: '2px solid white', boxShadow: 0, minWidth: 650, maxWidth: 800}} aria-label="simple table">
+                    <Table sx={{minWidth: 650, maxWidth: 800}} aria-label="simple table">
                         <TableHead>
                             <TableRow>
-                                <TableCell sx={{fontWeight: 'bold', backgroundColor: '#F8F8FF'}}>Distributor Name</TableCell>
-                                <TableCell sx={{fontWeight: 'bold', backgroundColor: '#F8F8FF'}}>Location</TableCell>
-                                <TableCell sx={{fontWeight: 'bold', backgroundColor: '#F8F8FF'}}>Products Sold</TableCell>
-                                <TableCell sx={{fontWeight: 'bold', backgroundColor: '#F8F8FF'}}>Total Sales</TableCell>
-                                <TableCell sx={{fontWeight: 'bold', backgroundColor: '#F8F8FF'}}>Status</TableCell>
+                                <TableCell sx={{fontFamily: 'Nunito', fontWeight: 'bold', color: 'black', backgroundColor: 'white'}}>Distributor Name</TableCell>
+                                <TableCell sx={{fontFamily: 'Nunito', fontWeight: 'bold', color: 'black', backgroundColor: 'white'}}>Location</TableCell>
+                                <TableCell sx={{fontFamily: 'Nunito', fontWeight: 'bold', color: 'black', backgroundColor: 'white'}}>Products Sold</TableCell>
+                                <TableCell sx={{fontFamily: 'Nunito', fontWeight: 'bold', color: 'black', backgroundColor: 'white'}}>Total Sales</TableCell>
+                                <TableCell sx={{fontFamily: 'Nunito', fontWeight: 'bold', color: 'black', backgroundColor: 'white'}}>Status</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
                             {rows.map((row) => (
                                 <TableRow key={row.name} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-                                    <TableCell component="th" scope="row">
+                                    <TableCell component="th" scope="row" sx={{fontFamily: 'Nunito', color: 'white', backgroundColor: '#101010'}}>
                                         {row.name}
                                     </TableCell>
-                                    <TableCell>{row.location}</TableCell>
-                                    <TableCell>{row.productssold}</TableCell>
-                                    <TableCell>{row.totalsales}</TableCell>
-                                    <TableCell>{row.status}</TableCell>
+                                    <TableCell sx={{fontFamily: 'Nunito', color: 'white', backgroundColor: '#101010'}}>{row.location}</TableCell>
+                                    <TableCell sx={{fontFamily: 'Nunito', color: 'white', backgroundColor: '#101010'}}>{row.productssold}</TableCell>
+                                    <TableCell sx={{fontFamily: 'Nunito', color: 'white', backgroundColor: '#101010'}}>{row.totalsales}</TableCell>
+                                    <TableCell sx={{fontFamily: 'Nunito', color: 'white', backgroundColor: '#101010'}}>{row.status}</TableCell>
                                 </TableRow>))}
                         </TableBody>
                     </Table>

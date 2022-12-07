@@ -10,6 +10,8 @@ import spacing from '@mui/system';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import { Typography } from "@mui/material";
+import InventoryIcon from '@mui/icons-material/Inventory';
+
 
 
 import { DataGrid } from '@mui/x-data-grid';
@@ -60,23 +62,25 @@ export default function ProductsDataTable() {
       ]; */
     return (
         <div>
-            <Container sx={{bgcolor: 'white', border: '1px solid ghostwhite', borderRadius: 2, p: 3, width: '810px', height: '550px'}}>
+            <Container sx={{bgcolor: 'white', border: '1px solid white', borderRadius: 2, p: 3, width: '810px', height: '550px'}}>
               
               <Typography sx={{
                     display: 'flex',
                     fontFamily: 'Nunito',
-                    fontSize: 'large', 
-                    justifyContent: 'flex-start', 
+                    fontSize: '24px', 
+                    justifyContent: 'center', 
                     fontWeight: 'bold', 
-                    paddingBottom: '2vh', 
-                    color: '#626262'}}>
-                        Top Products                
+                    paddingBottom: '4vh', 
+                    color: 'gray'}}>
+                      <InventoryIcon/>
+                        Top Grossing Products                
               </Typography>
 
               <Box sx={{ height: 450, width: '100%' }}>
               <DataGrid 
-                rowHeight={65} sx={{
-                boxShadow: 0,
+                rowHeight={65} 
+                sx =
+                {{
                 fontFamily: 'Nunito',
                 border: '2px solid white',
                 backgroundColor: 'white',
@@ -88,12 +92,15 @@ export default function ProductsDataTable() {
                 fontWeight: 'bold',
                       },
                       '& .MuiDataGrid-columnHeader': {
-                        
+                        color: 'black',
                         fontSize: '16px'
                       },
                       '& .MuiDataGrid-columnSeparator': {
                         color: 'white'
                       },
+                      '& .MuiDataGrid-MuiCheckbox': {
+                        color: 'white'
+                      }
                       
                   }}
                   rows={rows}
