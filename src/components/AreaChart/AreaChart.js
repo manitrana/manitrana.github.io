@@ -51,8 +51,8 @@ export default function AreaChart() {
                     fontFamily: 'Nunito',
                     fontSize: '24px', 
                     justifyContent: 'center', 
-                    fontWeight: 'bold', 
-                    paddingBottom: '4vh', 
+                    fontWeight: '', 
+                    paddingBottom: '3vh', 
                     color: '#C65498'}}>
                         <PublicIcon sx={{paddingTop: '0.4vh', paddingRight: '0.4vh', color: '#C65498'}}/>
                         Regional Sales by Product Type                        

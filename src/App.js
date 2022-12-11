@@ -176,10 +176,10 @@ function App() {
 
       <Grid display="flex" justify="center" direction="row" paddingRight="3vh" paddingLeft="1vh">
         <Container>
-          <BarChart></BarChart>
+          <AreaChart></AreaChart>
         </Container>
         <Container>
-          <AreaChart></AreaChart>
+          <BarChart></BarChart>
         </Container>
         
       </Grid>

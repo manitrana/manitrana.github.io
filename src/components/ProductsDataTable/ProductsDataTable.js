@@ -20,7 +20,7 @@ import { DataGrid } from '@mui/x-data-grid';
 export default function ProductsDataTable() {
 
     const columns = [
-        { field: 'id', headerName: 'Product #', width: 100 },
+        { field: 'id', headerName: 'Product #', width: 110 },
         {
           field: 'firstName',
           headerName: 'Product name',
@@ -49,17 +49,7 @@ export default function ProductsDataTable() {
         { id: 23098, lastName: 'Virus Protection', firstName: 'Antivirus 1.2', age: '+47%' },
         { id: 14009, lastName: 'Virus Protection', firstName: 'Secure Alert 1.1', age: '+64%' },
       ];
-    /* 
-    function createData(name, amountsold, revenue, growth) {
-        return { name, amountsold, revenue, growth };
-      }
-      
-      const rows = [
-        createData('Value 1', 1, 1.1, 1.2),
-        createData('Value 2', 2, 2.1, 2.2),
-        createData('Value 3', 3, 3.1, 3.2),
-        createData('Value 4', 4, 4.1, 4.2)
-      ]; */
+    
     return (
         <div>
             <Container sx={{bgcolor: 'white', border: '1px solid white', borderRadius: 2, p: 3, width: '810px', height: '550px'}}>
@@ -69,10 +59,10 @@ export default function ProductsDataTable() {
                     fontFamily: 'Nunito',
                     fontSize: '24px', 
                     justifyContent: 'center', 
-                    fontWeight: 'bold', 
-                    paddingBottom: '4vh', 
-                    color: 'gray'}}>
-                      <InventoryIcon/>
+                    fontWeight: 'medium', 
+                    paddingBottom: '2vh', 
+                    color: '#0075b0'}}>
+                      <InventoryIcon sx={{pt: '0.4vh', pr: '0.4vh'}}/>
                         Top Grossing Products                
               </Typography>
 
@@ -82,7 +72,7 @@ export default function ProductsDataTable() {
                 sx =
                 {{
                 fontFamily: 'Nunito',
-                border: '2px solid white',
+                border: '2px solid ghostwhite',
                 backgroundColor: 'white',
                 '& .MuiDataGrid-row': {
                   color: '#626262',
@@ -92,11 +82,12 @@ export default function ProductsDataTable() {
                 fontWeight: 'bold',
                       },
                       '& .MuiDataGrid-columnHeader': {
-                        color: 'black',
+                        color: 'white',
+                        backgroundColor: '#0075b0',
                         fontSize: '16px'
                       },
                       '& .MuiDataGrid-columnSeparator': {
-                        color: 'white'
+                        color: '#0075b0'
                       },
                       '& .MuiDataGrid-MuiCheckbox': {
                         color: 'white'

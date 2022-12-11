@@ -42,13 +42,14 @@ const BarChart = () => {
     
     <div>
       <Container sx={{bgcolor: 'white', border: '1px solid white', borderRadius: 2, p: 3, width: '810px', height: '500px'}}>
+                
                 <Box sx={{
                     display: 'flex',
                     fontSize: '24px', 
                     fontFamily: 'Nunito',
                     justifyContent: 'center', 
-                    fontWeight: 'bold', 
-                    paddingBottom: '4vh', 
+                    fontWeight: '', 
+                    paddingBottom: '3vh', 
                     color: '#0075b0'}}>
                       <EventNoteIcon sx={{paddingTop: '0.4vh', paddingRight: '0.4vh', color: '#0075b0'}}/>
                         Yearly Sales Tracking
