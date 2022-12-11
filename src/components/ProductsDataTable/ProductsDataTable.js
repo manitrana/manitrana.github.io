@@ -24,12 +24,12 @@ export default function ProductsDataTable() {
         {
           field: 'firstName',
           headerName: 'Product name',
-          width: 250
+          width: 210
         },
         {
           field: 'lastName',
           headerName: 'Product Type',
-          width: 175,
+          width: 190,
         },
         {
           field: 'age',
@@ -82,12 +82,12 @@ export default function ProductsDataTable() {
                 fontWeight: 'bold',
                       },
                       '& .MuiDataGrid-columnHeader': {
-                        color: 'white',
-                        backgroundColor: '#0075b0',
+                        color: 'black',
+                        backgroundColor: 'white',
                         fontSize: '16px'
                       },
                       '& .MuiDataGrid-columnSeparator': {
-                        color: '#0075b0'
+                        color: 'white'
                       },
                       '& .MuiDataGrid-MuiCheckbox': {
                         color: 'white'

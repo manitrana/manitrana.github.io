@@ -89,17 +89,16 @@ export default function DistributorDataTable() {
                   color: '#626262'
                 },
                 '& .MuiDataGrid-columnHeader': {
-                    color: 'white',
-                    backgroundColor: 'rgba(153, 93, 129)',
+                    color: 'black',
+                    backgroundColor: 'white',
                     fontSize: '16px'
                   },
                 '& .MuiDataGrid-row:hover': {
                 color: '#995D81',
                 fontWeight: 'bold',
                       },
-                      
                       '& .MuiDataGrid-columnSeparator': {
-                        color: 'rgba(153, 93, 129)'
+                        color: 'white'
                       }
                       
                   }}
