@@ -18,7 +18,7 @@ import CycloneIcon from '@mui/icons-material/Cyclone';
 
 export default function NavBar() {
     return (
-        <AppBar position="static" sx={{bgcolor: '#292929'}}>
+        <AppBar position="static" sx={{bgcolor: '#0075b0', boxShadow: 0}}>
         <Toolbar>
             {/*             <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
                 <MenuIcon/>
@@ -27,9 +27,9 @@ export default function NavBar() {
 
             <Box sx={{display: 'flex', justifyContent: 'flex-start'}}>
                 <CycloneIcon fontSize="large" sx={{paddingRight: '1vh'}}/>
-                <Typography fontFamily="Nunito" variant="h5" fontWeight="light" component="div" sx={{ flexGrow: 1 }}>
+                <Typography paddingTop="0.4vh" color="white" fontFamily="Nunito" variant="h6" fontWeight="bold" component="div" sx={{ flexGrow: 1 }}>
                     
-                    Sales Dashboard            
+                    Sales 360            
                 </Typography>
             </Box>
 
